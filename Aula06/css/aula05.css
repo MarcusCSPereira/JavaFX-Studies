@@ -1,0 +1,37 @@
+.root{
+    -fx-background-color: #111111;
+}
+
+.label{
+    -fx-alignment: center;
+    -fx-font-family: 'CopperPlate';
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+}
+
+.button{
+    -fx-background-color: rgb(155, 0, 155);
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'CopperPlate';
+    -fx-font-size: 15px;
+    -fx-background-radius: 10px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.text-field {
+    -fx-background-color: rgb(100,0,100);
+    -fx-background-insets: 0, 1, 1;
+    -fx-font-family: 'CopperPlate';
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 3 3 2 2, 2 2 1 1, 1;
+}
+
+.text-field:focused {
+    -fx-background-color: rgb(150,0,150);
+    -fx-background-insets: -1.4, 0, 1, 2, 2;
+    -fx-font-family: 'CopperPlate';
+    -fx-text-fill: #e4e4e4;
+    -fx-background-radius: 3.4 3.4 1.8 1.8, 2 2 1 1, 1;
+}
+

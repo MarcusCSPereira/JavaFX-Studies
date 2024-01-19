@@ -1,0 +1,14 @@
+.root{
+    -fx-background-color: #111111;
+}
+
+.label{
+    -fx-font-size: 20px;
+    -fx-font-family: 'CopperPlate';
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+#title{
+    -fx-font-size: 60px;
+}

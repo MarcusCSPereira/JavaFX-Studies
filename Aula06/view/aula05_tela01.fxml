@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller01">
+   <children>
+      <Button layoutX="238.0" layoutY="286.0" mnemonicParsing="false" onAction="#switchScene2" prefHeight="56.0" prefWidth="200.0" text="Change to Screen 2" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+      <Label layoutX="294.0" layoutY="59.0" text="Tela 1" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="loginButton" layoutX="200.0" layoutY="358.0" mnemonicParsing="false" onAction="#login" prefHeight="56.0" prefWidth="200.0" text="Log In" />
+      <TextField fx:id="text_field" layoutX="150.0" layoutY="224.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" />
+   </children>
+</AnchorPane>

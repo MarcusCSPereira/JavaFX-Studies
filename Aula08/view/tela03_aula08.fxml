@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller03">
+   <children>
+      <ImageView fx:id="imageview" fitHeight="150.0" fitWidth="150.0" layoutX="76.0" layoutY="16.0" pickOnBounds="true" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="74.0">
+         <image>
+            <Image url="@../assets/lightOff.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" alignment="CENTER" layoutX="-1.0" layoutY="172.0" text="OFF" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" />
+      <CheckBox fx:id="checkbox" alignment="CENTER" layoutX="107.0" layoutY="221.0" mnemonicParsing="false" onAction="#changeImage" prefHeight="18.0" prefWidth="95.0" text="ON / OFF" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

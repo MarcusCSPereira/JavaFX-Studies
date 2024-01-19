@@ -1,0 +1,13 @@
+.root{
+    -fx-background-color: #111111;
+}
+
+.button{
+    -fx-background-color: #a20ab9;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-font-family: 'CopperPlate';
+    -fx-font-size: 15px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}

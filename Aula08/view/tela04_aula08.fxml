@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller04">
+   <children>
+      <RadioButton fx:id="vbutton" layoutX="22.0" layoutY="223.0" mnemonicParsing="false" onAction="#getGame" text="Valorant">
+         <toggleGroup>
+            <ToggleGroup fx:id="game" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="lbutton" layoutX="124.0" layoutY="224.0" mnemonicParsing="false" onAction="#getGame" text="League of Legends" toggleGroup="$game" />
+      <RadioButton fx:id="dbutton" layoutX="269.0" layoutY="224.0" mnemonicParsing="false" onAction="#getGame" text="Diablo 4" toggleGroup="$game" />
+      <Label fx:id="label" alignment="CENTER" layoutX="185.0" layoutY="76.0" text="Escolha algum jogo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

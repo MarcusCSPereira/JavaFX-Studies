@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller01">
+   <children>
+      <Button fx:id="button" layoutX="250.0" layoutY="332.0" mnemonicParsing="false" onAction="#displayImage" text="Button" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" />
+      <ImageView fx:id="imageView" fitHeight="307.0" fitWidth="383.0" layoutX="109.0" layoutY="14.0" onMouseEntered="#displayImage" onMouseExited="#displayImage" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="109.0" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@../assets/shrek1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
