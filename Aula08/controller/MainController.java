@@ -26,7 +26,7 @@ public class MainController implements Initializable{
     private Scene scene;
     private Parent root;
 
-    private String[] nodes = {"Image View","TextField","CheckBox","RadioButton","DatePicker","ColorPicker","ChoiceBox"};
+    private String[] nodes = {"Image View","TextField","CheckBox","RadioButton","DatePicker","ColorPicker","ChoiceBox","Sliders","ProgressBar","Spinner"};
 
 
     @Override
@@ -57,6 +57,15 @@ public class MainController implements Initializable{
                 break;
             case "ChoiceBox":
                 switchScreen("/view/tela07_aula08.fxml", event,null);
+                break;
+            case "Sliders":
+                switchScreen("/view/tela08_aula08.fxml", event,null);
+                break;
+            case "ProgressBar":
+                switchScreen("/view/tela09_aula08.fxml", event,null);
+                break;
+            case "Spinner":
+                switchScreen("/view/tela10_aula08.fxml", event,null);
                 break;
             default:
                 System.out.println("Error");
