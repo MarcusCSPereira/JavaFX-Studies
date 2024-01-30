@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.media.MediaView?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller20">
+   <center>
+      <MediaView fx:id="mediaView" fitHeight="350.0" fitWidth="590.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <ToolBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="playBtt" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#play" prefHeight="26.0" prefWidth="54.0" text="Play" />
+            <Button fx:id="pauseBtt" mnemonicParsing="false" onAction="#pause" prefHeight="26.0" prefWidth="54.0" text="Pause" />
+            <Button fx:id="resetBtt" mnemonicParsing="false" onAction="#reset" prefHeight="26.0" prefWidth="54.0" text="Reset" />
+        </items>
+         <padding>
+            <Insets left="220.0" />
+         </padding>
+      </ToolBar>
+   </top>
+</BorderPane>

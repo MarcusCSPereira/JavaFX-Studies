@@ -26,7 +26,12 @@ public class MainController implements Initializable{
     private Scene scene;
     private Parent root;
 
-    private String[] nodes = {"Image View","TextField","CheckBox","RadioButton","DatePicker","ColorPicker","ChoiceBox","Sliders","ProgressBar","Spinner"};
+private String[] nodes = {"Image View","TextField","CheckBox","RadioButton","DatePicker","ColorPicker","ChoiceBox","Sliders","ProgressBar","Spinner","ListView","TreeView","TableView", "MenuBar","FlowPane","GridPane","TabPane","ToolBar e BorderPane","KeyEvents","MediaView","Web View"};
+
+/* 
+Outros Panes para ver depois:
+"StackPane","DialogPane","ScrollPane","SplitPane","TilePane","TitledPane"
+*/
 
 
     @Override
@@ -67,6 +72,39 @@ public class MainController implements Initializable{
             case "Spinner":
                 switchScreen("/view/tela10_aula08.fxml", event,null);
                 break;
+            case "ListView":
+                switchScreen("/view/tela11_aula08.fxml", event,null);
+                break;
+            case "TreeView":
+                switchScreen("/view/tela12_aula08.fxml", event,null);
+                break;
+            case "TableView":
+                switchScreen("/view/tela13_aula08.fxml", event,null);
+                break;
+            case "MenuBar":
+                switchScreen("/view/tela14_aula08.fxml", event,null);
+                break;
+            case "FlowPane":
+                switchScreen("/view/tela15_aula08.fxml", event,null);
+                break;
+            case "GridPane":
+                switchScreen("/view/tela16_aula08.fxml", event,null);
+                break;
+            case "TabPane":
+                switchScreen("/view/tela17_aula08.fxml", event,null);
+                break;
+            case "ToolBar e BorderPane":
+                switchScreen("/view/tela18_aula08.fxml", event,null);
+                break;
+            case "KeyEvents":
+                switchScreen("/view/tela19_aula08.fxml", event,null);
+                break;
+            case "MediaView":
+                switchScreen("/view/tela20_aula08.fxml", event,null);
+                break;
+            case "Web View":
+                switchScreen("/view/tela21_aula08.fxml", event,null);
+                break;
             default:
                 System.out.println("Error");
                 break;
@@ -74,8 +112,10 @@ public class MainController implements Initializable{
     }
 
     public void switchScreen(String fxml,ActionEvent e, String css) throws IOException{
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml));
+        root = loader.load();
         
-        root = FXMLLoader.load(getClass().getResource(fxml));
         stage = (Stage) ((Node)e.getSource()).getScene().getWindow();
         scene = new Scene(root);
         

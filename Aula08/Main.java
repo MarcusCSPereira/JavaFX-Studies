@@ -13,7 +13,8 @@ public class Main extends Application {
 
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource("./view/telaMain_aula08.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("./view/telaMain_aula08.fxml"));
+        Parent root = loader.load();
 
         Scene scene = new Scene(root);
 
