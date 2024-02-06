@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #000011;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller03">
+   <children>
+      <VBox layoutX="150.0" layoutY="80.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="button0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #cfcf00;" />
+                  <Button fx:id="button1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #268600;" />
+                  <Button fx:id="button2" layoutX="235.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #3c0074;" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="button3" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #005485;" />
+                  <Button fx:id="button4" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #a00080;" />
+                  <Button fx:id="button5" layoutX="110.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #02006c;" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="button6" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #663300;" />
+                  <Button fx:id="button7" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #600000;" />
+                  <Button fx:id="button8" layoutX="110.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #006e49;" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="startBtt" layoutX="280.0" layoutY="396.0" mnemonicParsing="false" onAction="#start" style="-fx-background-color: white;" text="Start">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="text" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="434.0" prefHeight="34.0" prefWidth="220.0" style="-fx-text-fill: white;" text="Press Start!" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Ayuthaya" size="23.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="184.0" layoutY="9.0" prefHeight="71.0" prefWidth="245.0">
+         <children>
+            <Label text="G" textFill="RED">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="61.0" />
+               </font>
+            </Label>
+            <Label text="e" textFill="#00ff15">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="61.0" />
+               </font>
+            </Label>
+            <Label text="n" textFill="#ff00e9">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="61.0" />
+               </font>
+            </Label>
+            <Label text="i" textFill="YELLOW">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="61.0" />
+               </font>
+            </Label>
+            <Label text="u" textFill="#ab00ff">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="61.0" />
+               </font>
+            </Label>
+            <Label text="s" textFill="#00fffb">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="61.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="pointlabel" alignment="CENTER" layoutX="459.0" layoutY="35.0" prefHeight="34.0" prefWidth="94.0" style="-fx-text-fill: white;" text="Points: 0">
+         <font>
+            <Font name="Ayuthaya" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

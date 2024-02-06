@@ -26,7 +26,7 @@ public class MainController implements Initializable{
     private Scene scene;
     private Parent root;
 
-private String[] nodes = {"Image View","TextField","CheckBox","RadioButton","DatePicker","ColorPicker","ChoiceBox","Sliders","ProgressBar","Spinner","ListView","TreeView","TableView", "MenuBar","FlowPane","GridPane","TabPane","ToolBar e BorderPane","KeyEvents","MediaView","Web View"};
+private String[] nodes = {"ImageView","TextField","CheckBox","RadioButton","DatePicker","ColorPicker","ChoiceBox","Sliders","ProgressBar","Spinner","ListView","TreeView","TableView", "MenuBar","FlowPane","GridPane","TabPane","ToolBar | BorderPane","KeyEvents","MediaView","WebView","MusicPlayer"};
 
 /* 
 Outros Panes para ver depois:
@@ -42,7 +42,7 @@ Outros Panes para ver depois:
     public void join(ActionEvent event) throws IOException {
         String node = choicebox.getValue();
         switch (node) {
-            case "Image View":
+            case "ImageView":
                 switchScreen("/view/tela01_aula08.fxml", event, "/css/tela1_aula08.css");
                 break;
             case "TextField":
@@ -93,7 +93,7 @@ Outros Panes para ver depois:
             case "TabPane":
                 switchScreen("/view/tela17_aula08.fxml", event,null);
                 break;
-            case "ToolBar e BorderPane":
+            case "ToolBar | BorderPane":
                 switchScreen("/view/tela18_aula08.fxml", event,null);
                 break;
             case "KeyEvents":
@@ -102,8 +102,10 @@ Outros Panes para ver depois:
             case "MediaView":
                 switchScreen("/view/tela20_aula08.fxml", event,null);
                 break;
-            case "Web View":
+            case "WebView":
                 switchScreen("/view/tela21_aula08.fxml", event,null);
+            case "MusicPlayer":
+                switchScreen("/view/tela22_aula08.fxml", event,null);
                 break;
             default:
                 System.out.println("Error");

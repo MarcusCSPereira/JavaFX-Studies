@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller02">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8.0.351" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller02">
    <children>
       <Label fx:id="label" alignment="CENTER" layoutX="135.0" layoutY="32.0" prefHeight="52.0" prefWidth="280.0" text="Welcome" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
       <Label alignment="CENTER" layoutX="-13.0" layoutY="132.0" text="Digite sua Idade" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />

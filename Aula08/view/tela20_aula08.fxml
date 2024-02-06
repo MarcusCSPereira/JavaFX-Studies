@@ -7,7 +7,7 @@
 <?import javafx.scene.media.MediaView?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller20">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.351" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller20">
    <center>
       <MediaView fx:id="mediaView" fitHeight="350.0" fitWidth="590.0" BorderPane.alignment="CENTER" />
    </center>

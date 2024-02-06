@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#moveSquareKeyPressed" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #EAF4D3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller01">
+   <children>
+      <Button fx:id="startButton" layoutX="278.0" layoutY="29.0" mnemonicParsing="false" onKeyPressed="#moveSquareKeyPressed" onMouseClicked="#start" text="Start" />
+      <Label fx:id="loselabel" alignment="CENTER" layoutX="285.0" layoutY="390.0" text="You Lose" textFill="RED" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="AppleGothic Regular" size="72.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

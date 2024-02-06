@@ -117,7 +117,7 @@ public class Controller21 implements Initializable{
 
     public void executeJS(){
         engine.executeScript("window.location = \"https://www.youtube.com\";");
-        textField.setText("https://www.youtube.com");
+        textField.setText("www.youtube.com");
     }
     
 }

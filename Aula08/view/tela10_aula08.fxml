@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller10">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.351" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller10">
    <children>
       <Spinner fx:id="spinner" editable="true" layoutX="147.0" layoutY="151.0" prefHeight="63.0" prefWidth="311.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" />
       <Label fx:id="label" alignment="CENTER" layoutX="285.0" layoutY="67.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">

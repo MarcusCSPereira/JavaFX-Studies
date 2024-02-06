@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.351" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
    <children>
       <Label alignment="CENTER" layoutX="285.0" layoutY="63.0" prefWidth="110.0" text="Selecione um Node para ver sua tela:" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>

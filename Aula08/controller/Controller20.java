@@ -44,7 +44,7 @@ public class Controller20 implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        file=new File("/Users/marcus_cs_pereira/Programação/JavaFX_Projects/JavaFX-Studies/Aula08/assets/naOndinha.mp4");
+        file=new File("./assets/naOndinha.mp4");
         media=new Media(file.toURI().toString());
         mediaPlayer=new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);

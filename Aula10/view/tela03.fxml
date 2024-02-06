@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EAF4D3;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller03">
+   <children>
+      <VBox layoutX="111.0" layoutY="123.0" prefHeight="154.0" prefWidth="379.0" spacing="25.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#encryptButton" prefHeight="33.0" prefWidth="398.0" text="Encrypt">
+               <graphic>
+                  <TextField fx:id="keyTextField" prefHeight="25.0" prefWidth="310.0" promptText="Key" text="65 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#decryptButton" prefHeight="33.0" prefWidth="394.0" text="Decrypt">
+               <graphic>
+                  <TextField fx:id="inputTextField" prefHeight="25.0" prefWidth="310.0" promptText="Input" />
+               </graphic>
+            </Button>
+            <TextField fx:id="outputTextField" editable="false" promptText="Output" />
+         </children>
+      </VBox>
+      <Text layoutX="110.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key" />
+      <Text layoutX="110.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input" />
+      <Text layoutX="110.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output" />
+      <HBox alignment="CENTER" layoutX="173.0" layoutY="39.0" prefHeight="25.0" prefWidth="255.0" spacing="25.0">
+         <children>
+            <RadioButton fx:id="aseRadio" mnemonicParsing="false" selected="true" text="ASE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="encryptionDecryptionType" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="tripleDSERadio" mnemonicParsing="false" text="TripleDES" toggleGroup="$encryptionDecryptionType" />
+         </children>
+      </HBox>
+      <Text layoutX="211.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ASE key: 16 hexadecimal numbers" />
+      <Text layoutX="234.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TripleDES key: any String" />
+   </children>
+</AnchorPane>

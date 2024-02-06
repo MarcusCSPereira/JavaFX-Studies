@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EAF4D3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller01">
+   <children>
+      <VBox layoutX="111.0" layoutY="123.0" prefHeight="154.0" prefWidth="379.0" spacing="25.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#encryptButton" prefHeight="33.0" prefWidth="398.0" text="Encrypt">
+               <graphic>
+                  <TextField fx:id="keyTextField" prefHeight="25.0" prefWidth="310.0" promptText="Key" text="65 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12" />
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#decryptButton" prefHeight="33.0" prefWidth="394.0" text="Decrypt">
+               <graphic>
+                  <TextField fx:id="inputTextField" prefHeight="25.0" prefWidth="310.0" promptText="Input" />
+               </graphic>
+            </Button>
+            <TextField fx:id="outputTextField" editable="false" promptText="Output" />
+         </children>
+      </VBox>
+      <Text layoutX="110.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key" />
+      <Text layoutX="110.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input" />
+      <Text layoutX="110.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output" />
+   </children>
+</AnchorPane>

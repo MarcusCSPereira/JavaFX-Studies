@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller09">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.351" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller09">
    <children>
       <ProgressBar fx:id="progressbar" layoutX="59.0" layoutY="154.0" prefHeight="73.0" prefWidth="503.0" progress="0.0" />
       <Button fx:id="buttonMais" layoutX="350.0" layoutY="260.0" mnemonicParsing="false" onAction="#aumentar" prefHeight="26.0" prefWidth="120.0" text="Aumentar ++" AnchorPane.rightAnchor="130.0" />
