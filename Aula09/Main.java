@@ -9,7 +9,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         // Carrega o arquivo FXML
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("view/tela01_aula11.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("./view/tela01_aula09.fxml"));
         Parent root = loader.load();
 
         // Cria a cena

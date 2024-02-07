@@ -74,7 +74,7 @@ public class PongGame extends Application {
                 playerTwoYPos = ballYPos - PLAYER_HEIGHT / 2;
             } else {
                 if (ballbounce > 3) {
-                    playerTwoYPos = ballYPos > playerTwoYPos + PLAYER_HEIGHT / 2 ? playerTwoYPos += 8.0 : playerTwoYPos - 10.0;
+                    playerTwoYPos = ballYPos > playerTwoYPos + PLAYER_HEIGHT / 2 ? playerTwoYPos += 8.0 : playerTwoYPos - 8.0;
                 }else if(ballbounce > 7){
                     playerTwoYPos = ballYPos > playerTwoYPos + PLAYER_HEIGHT / 2 ? playerTwoYPos += 10.0 : playerTwoYPos - 10.0;
                 }else if(ballbounce > 10){
@@ -125,12 +125,12 @@ public class PongGame extends Application {
             ballbounce++;
 			ballYSpeed += 1 * Math.signum(ballYSpeed);
 			ballXSpeed += 1 * Math.signum(ballXSpeed);
-            System.out.println("ballbounce: " + ballbounce);
 			ballXSpeed *= -1;
 		}
 		
 		//draw score
 		gc.fillText(scoreP1 + "\t\t\t\t\t\t\t\t" + scoreP2, width / 2, 100);
+		
 		//draw player 1 & 2
 		gc.fillRect(playerTwoXPos, playerTwoYPos, PLAYER_WIDTH, PLAYER_HEIGHT);
 		gc.fillRect(playerOneXPos, playerOneYPos, PLAYER_WIDTH, PLAYER_HEIGHT);

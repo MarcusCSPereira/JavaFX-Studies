@@ -26,9 +26,7 @@ public class Bird {
         moveBirdY(movement);
     }
 
-    public void moveBirdY(double positionChange){
-        bird.setY(bird.getY() + positionChange);
-    }
+    public void moveBirdY(double positionChange){bird.setY(bird.getY() + positionChange);}
 
     public boolean isBirdDead(ArrayList<Rectangle> obstacles, AnchorPane plane){
         double birdY = bird.getLayoutY() + bird.getY();
@@ -36,7 +34,6 @@ public class Bird {
         if(collisionHandler.collisionDetection(obstacles, bird)){
             return  true;
         }
-
         return birdY >= plane.getHeight();
     }
 }

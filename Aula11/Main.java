@@ -37,7 +37,7 @@ public class Main extends Application {
         //Carrega o arquivo FXML sobre o Brick breaker game, que envolve a movimentação de um node Draggable, com a adição de um bounce Movemnte para jogar o jogo:
         //FXMLLoader loader = new FXMLLoader(getClass().getResource("view/tela06_aula11.fxml"));
 
-        /*//Carrega o arquivo FXML sobre o Flappy Bird game, que envolve a movimentação de um node para desviar de obstáculos, com o ColisionDetection e a criação de Obstacles em classes model separadas:
+        //Carrega o arquivo FXML sobre o Flappy Bird game, que envolve a movimentação de um node para desviar de obstáculos, com o ColisionDetection e a criação de Obstacles em classes model separadas:
         FXMLLoader loader = new FXMLLoader(getClass().getResource("view/tela07_aula11.fxml"));
         Parent root = loader.load();
         // Cria a cena
@@ -46,14 +46,14 @@ public class Main extends Application {
         // Configura o palco principal
         primaryStage.setScene(scene);
         primaryStage.setTitle("Games");
-        primaryStage.show();*/
+        primaryStage.show();
     }
 
     public static void main(String[] args) {
-        //launch(args);
+        launch(args);
         //Chama o TetrisGame:
         //Tetris.main(args);
         //Chama o PingPongGame:
-        PongGame.main(args);
+        //PongGame.main(args);
     }
 }

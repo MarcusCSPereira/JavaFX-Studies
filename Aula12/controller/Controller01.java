@@ -89,6 +89,13 @@ public class Controller01 {
     
     
     public void write(ActionEvent event){
+            if(!file.exists()){
+                try {
+                    file.createNewFile();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         try {
             String username = textfield.getText();
             String password = passwordfield.getText();
