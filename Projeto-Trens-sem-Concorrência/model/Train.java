@@ -7,7 +7,6 @@ public class Train {
     private double speed;
     private ImageView trainImage;
     private int initialPosition;
-    private boolean inCriticalZone = false;
 
     public Train( ImageView trainImage, int initialPosition) {
         this.trainImage = trainImage;
@@ -55,15 +54,6 @@ public class Train {
     public int getInitialPosition() {
         return initialPosition;
     }
-
-    public boolean isInCriticalZone() {
-        return inCriticalZone;
-    }
-
-    public void setInCriticalZone(boolean inCriticalZone) {
-        this.inCriticalZone = inCriticalZone;
-    }
-
 
 
 }
