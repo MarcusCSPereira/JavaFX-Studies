@@ -12,7 +12,7 @@ public class Main extends Application{
         Parent root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Tela 01");
+        primaryStage.setTitle("Tela 1");
         primaryStage.show();
     }
 
